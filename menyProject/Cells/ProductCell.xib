@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ProductCell" customModule="menyProject" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="147" height="267"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="147" height="267"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="249" verticalCompressionResistancePriority="749" translatesAutoresizingMaskIntoConstraints="NO" id="riD-zh-3q1">
+                        <rect key="frame" x="0.0" y="0.0" width="147" height="182"/>
+                        <color key="backgroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kra-FV-dHq">
+                        <rect key="frame" x="51" y="197" width="45" height="21"/>
+                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D1J-Jg-wlp">
+                        <rect key="frame" x="54" y="226" width="39" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="riD-zh-3q1" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Gnw-6r-pHr"/>
+                <constraint firstAttribute="bottom" secondItem="D1J-Jg-wlp" secondAttribute="bottom" constant="20" id="H4q-Yo-Ei7"/>
+                <constraint firstItem="Kra-FV-dHq" firstAttribute="top" secondItem="riD-zh-3q1" secondAttribute="bottom" constant="15" id="IND-sx-uOG"/>
+                <constraint firstAttribute="trailing" secondItem="riD-zh-3q1" secondAttribute="trailing" id="Qns-29-d67"/>
+                <constraint firstItem="riD-zh-3q1" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Sfl-WJ-jXM"/>
+                <constraint firstItem="D1J-Jg-wlp" firstAttribute="top" secondItem="Kra-FV-dHq" secondAttribute="bottom" constant="8" id="cgv-e3-Hdw"/>
+                <constraint firstItem="D1J-Jg-wlp" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="jG8-81-CRP"/>
+                <constraint firstItem="Kra-FV-dHq" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="xC9-W7-dr0"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="147" height="267"/>
+            <connections>
+                <outlet property="nameProduct" destination="Kra-FV-dHq" id="Jhj-Ct-z5e"/>
+                <outlet property="priceProduct" destination="D1J-Jg-wlp" id="0Im-Zl-rUG"/>
+                <outlet property="productImage" destination="riD-zh-3q1" id="tx9-zW-qFa"/>
+            </connections>
+            <point key="canvasLocation" x="-10.4" y="74.212893553223395"/>
+        </collectionViewCell>
+    </objects>
+</document>
